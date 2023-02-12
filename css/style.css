@@ -1,0 +1,459 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(243, 220, 13, 0.302),rgba(0, 168, 255, 0.302)), url('../images/IMG_7620.JPG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #e9dd6e4d 0%, #00a8ff4d 0%, #8079404d 100%);
+}
+.navbar::before{
+content: "";
+position: absolute;
+top: 0%;
+bottom: 0%;
+left: 0;
+right: 0;
+opacity: .4;
+z-index: -1;
+background: linear-gradient(to right, #ffe6004d 0%, #00a8ff4d 0%, #ffe6004d 100%, #00a8ff4d 100%);
+}
+
+.nav-item a{
+    color:lightskyblue !important;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -wibkit-transform: translate(-50%, -50%);
+    text-shadow: 0px 1px 1px black;
+}
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 3px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0px;
+    color: white;
+}
+/* ********************************** The Extra Div Started In Css ********************************* */
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div{
+    background-color: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div h2, .services-div h2{
+    font-size: 0.9rem;
+    line-height: 1.1;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+.fa-magic:before, .fa-trophy:before, .fa-desktop:before, .fa-phone:before, .fa-wifi:before{
+    content: '';
+    font-size: 35px;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    transform: translateY(-20px);
+}
+/* *********************************** The Extra Div Ended In Css ********************************** */
+
+/* **************************** Offer Services CSS Start ********************************* */
+.serviceoffer{
+    background-color: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+/* **************************** Offer Services CSS Ended ******************************** */
+.serviceoffer{
+    background-color: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.headings{
+    margin-bottom: 50px;
+}
+.headings h1{
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+.names h1{
+    font-size: 0.9rem;
+    color: #2e2e2e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.services-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    height: 0.7rem !important;
+    margin-bottom: 20px;
+}
+i{
+    color: #2fccd0;
+}
+
+/* ----------------------------- AWARD WON STARTED ------------------------------- */
+
+.project-work{
+    margin: 100px 0;
+
+}
+.project-work h1{
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+/* ----------------------------- AWARD WON ENDED --------------------------------- */
+
+/* ---------------------------- Pricing CSS Started ------------------------------ */
+
+.pricing{
+width: 100%;
+height: 100vh;
+padding: 50px;
+position: relative;    
+}
+.pricing::before{
+content: "";
+position: absolute;
+top: 0%;
+bottom: 0%;
+left: 0;
+right: 0;
+z-index: -1;
+background: linear-gradient(160deg, #51cdec 55%, #fff 0%);    
+}
+.money{
+    font-size: 40px;
+    line-height: 1.2;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+    margin-top: 40px;
+}
+.card-header{
+    font-size: 1.7rem;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 25px 0;
+}
+.card-body{
+    padding: 30px 0 !important;
+}
+.card-body li{
+     margin: 10px 0;
+     font-weight: 400;
+}
+.card-footer{
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.card-footer a{
+border: 1px solid #50d1c0;
+padding: 10px 15px;
+margin: 10px 0;
+border-radius: 100px;
+outline: none;
+line-height: 1;
+text-align: center;
+font-weight: bold;
+}
+.card:hover .card-footer a{
+    color: #fff;
+    background-color: #50d1c0;
+    box-shadow: 0 0 10px 0px black;
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .card-header, .card:hover .money{
+    color: #50d1c0;
+}
+.card-second{
+    transform: translateY(-20px);
+}
+
+/* ---------------------------- Pricing CSS Ended -------------------------------- */
+
+/* --------------------------------- Customer Feedback Started -------------------- */
+
+.happyclient{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+.box:hover{
+    background-color: #2fccd0;
+}
+.carousel-indicators{
+    right: 0;
+    position: absolute;
+    bottom: -60px;
+    /* background-color: #2fccd0; */
+}
+.carousel-indicators .active{
+    background-color: #2fccd0 !important;
+}
+.box a{
+    position: relative;
+}
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box a::after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9fc 100%);
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------- Customer Feedback Ended ------------------------- */
+/* ---------------------------------- Contact Us CSS Started ------------------------- */
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 60px 0;
+}
+.contactus::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #17c9fc 55%, #fff 0%);
+}
+.rohit button{
+    border: 1px solid #50d1c0;
+    padding: 20px 25px;
+    margin: 10px 0;
+    border-radius: 100px;
+    outline: none;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;   
+}
+form:hover .rohit button{
+    color: orange;
+background-color: #fff;
+}
+::placeholder{
+    font-size: 0.85rem;
+}
+/* ------------------------------------- Contact Us CSS Ended ------------------------ */
+/* subscribe to my channel started */
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px  auto;
+}
+.muji{
+    border-radius: 100px 0 0 100px !important;
+}
+.input-group-text{
+    background-color:#5bc0de;
+    text-align: center;
+    color: white;
+    border-radius: 0 100px 100px 0;
+    min-width: 85px;
+}
+/* Subscribe to my channel Ended */
+/* footer section start */
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 10px 0;
+    background-color: #00abff;
+    position: relative;
+}
+.footersection p{
+    color: #fff;
+}
+.footersection li a{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center !important;
+}
+.footersection h3{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.scrolltop{
+    float: right;
+}
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    color: #fff;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+#mybtn:hover{
+background-color: #606060;
+
+}
+
+/* fooster section ended */
+
+/* -------------------------- media responsive ----------------------- */
+@media (max-width:768px){
+    .nav-item{
+        text-align: center;
+    }
+    .project-work h1 {
+        font-size: 1.3rem !important;
+    }
+    p{
+        font-size: 0.6rem;
+        line-height: 1.6;
+        font-weight: bold;
+        color: #606060;
+    }
+    .pricing, .happyclient, .contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+    .contactus p{
+        padding: 0 50px;
+    }
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+    .footer-div:nth-child(2){
+        text-align: left !important;
+    }
+    .footer-div{
+        margin: 30px 0px;
+    }
+}
+@media(max-width:1500px){
+    .pricing, .happyclient, .contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+}
+/* @media(max-width: 804px){
+    body{
+        width: 100% !important;
+    }
+} */
